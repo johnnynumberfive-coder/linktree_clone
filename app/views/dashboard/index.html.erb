@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+            <div class="col-6">
+                <h1>Link Manager</h1>
+                <% current_user.links.each do |link| %>
+                    <%= simple_form_for(link, url: links_url(link)) do |f| %>
+                        <%= f.input :title, placeholder: "Title", label: false, class: "form-control" %>
+                        <%= f.input :url, placeholder: "URL", label: false, class: "form-control" %>
+                        <%= f.submit "Update Link", class: "btn btn-primary me-auto" %>
+                    <% end %>
+                <% end %>
+            </div>
+        <div class="col-3"></div>
+    </div>
+</div>
