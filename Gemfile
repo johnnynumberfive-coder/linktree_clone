@@ -73,3 +73,5 @@ gem "simple_form", "~> 5.3"
 gem "friendly_id", "~> 5.5"
 
 gem "net-pop", "~> 0.1.2"
+
+gem "net-protocol", "~> 0.2.2"
